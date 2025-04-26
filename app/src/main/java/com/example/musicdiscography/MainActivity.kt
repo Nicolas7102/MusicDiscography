@@ -30,6 +30,14 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+fun getAlbum() : List<Album> {
+    val gson = Gson()
+    val albumResponse = gson.fromJson(json, AlbumResponse::class.java)
+    Log.d("GSONDATA", albumResponse.artists.toString())
+    Log.d("GSONDATATITLE", albumResponse.artists[0].name)
+    return albumResponse.artists
+}
+
 var json = """
     {
   "created": "2025-04-24T21:09:51.704Z",
@@ -216,10 +224,3 @@ var json = """
 }
 """.trimIndent()
 
-fun getAlbum() : List<Album> {
-    val gson = Gson()
-    val albumResponse = gson.fromJson(json, AlbumResponse::class.java)
-    Log.d("GSONDATA", albumResponse.artists.toString())
-    Log.d("GSONDATATITLE", albumResponse.artists[0].name)
-    return albumResponse.artists
-}

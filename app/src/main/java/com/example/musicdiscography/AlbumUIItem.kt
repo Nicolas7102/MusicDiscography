@@ -6,7 +6,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 
 @Composable
-
 fun AlbumUIItem(
     album: Album,
     modifier: Modifier = Modifier
@@ -14,6 +13,9 @@ fun AlbumUIItem(
     Column {
         Text(
             text = album.name,
+        )
+        Text(
+            text = album.country,
         )
     }
 }

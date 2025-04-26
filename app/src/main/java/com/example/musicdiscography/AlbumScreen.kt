@@ -21,7 +21,7 @@ fun AlbumScreen(albumList: List<Album>, modifier: Modifier = Modifier) {
         Text(
             text = "Lista de algo",
             style = MaterialTheme.typography.titleLarge,
-            modifier = modifier,
+            modifier = modifier
         )
     }
     Spacer(modifier = Modifier.height(12.dp))

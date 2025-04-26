@@ -5,8 +5,8 @@ import androidx.compose.ui.Modifier
 
 @Composable
 fun AlbumUIList(
-    albumList: List<Album>,
+    list: List<Album>,
     modifier: Modifier = Modifier
 ) {
-    AlbumUIItem(albumList[0])
+    AlbumUIItem(list[0])
 }
