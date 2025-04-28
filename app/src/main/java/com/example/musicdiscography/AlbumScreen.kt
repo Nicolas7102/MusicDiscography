@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.musicdiscography.AlbumUIList
 import com.example.musicdiscography.ui.theme.AlbumTheme
 
 @Composable
@@ -23,9 +24,10 @@ fun AlbumScreen(albumList: List<Album>, modifier: Modifier = Modifier) {
             style = MaterialTheme.typography.titleLarge,
             modifier = modifier
         )
+        Spacer(modifier = Modifier.height(12.dp))
+        AlbumUIList(albumList, Modifier.fillMaxSize())
     }
-    Spacer(modifier = Modifier.height(12.dp))
-    AlbumUIList(albumList, Modifier.fillMaxSize())
+
 }
 
 @Preview(showBackground = true)

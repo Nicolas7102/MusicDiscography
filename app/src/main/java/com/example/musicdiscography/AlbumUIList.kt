@@ -10,14 +10,5 @@ fun AlbumUIList(
     list: List<Album>,
     modifier: Modifier = Modifier
 ) {
-    LazyColumn (
-        modifier = modifier
-    ) {
-        items(
-            items = list,
-            key = { it -> it.name}
-        ) {
-            album -> AlbumUIItem(album)
-        }
-    }
+    AlbumUIItem(list[0])
 }
