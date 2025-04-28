@@ -5,6 +5,6 @@ data class AlbumResponse(
 )
 
 data class Album(
+    val id: String,
     val name: String,
-    val country: String,
 )

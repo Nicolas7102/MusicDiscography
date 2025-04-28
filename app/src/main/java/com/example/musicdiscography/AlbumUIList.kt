@@ -15,7 +15,7 @@ fun AlbumUIList(
     ){
         items(
             items = list,
-            key = { it -> it.name }
+            key = { it -> it.id }
         ) {
             album -> AlbumUIItem(album)
         }

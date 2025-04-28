@@ -8,13 +8,14 @@ import androidx.compose.ui.Modifier
 @Composable
 fun AlbumUIItem(
     album: Album,
+    modifier: Modifier = Modifier
 ) {
     Column {
         Text(
-            text = album.name,
+            text = album.id,
         )
         Text(
-            text = album.country,
+            text = album.name,
         )
     }
 }
