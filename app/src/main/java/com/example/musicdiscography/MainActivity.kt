@@ -33,8 +33,8 @@ class MainActivity : ComponentActivity() {
 fun getAlbum() : List<Album> {
     val gson = Gson()
     val albumResponse = gson.fromJson(json, AlbumResponse::class.java)
-    Log.d("GSONDATA", albumResponse.artists.toString())
-    Log.d("GSONDATATITLE", albumResponse.artists[0].name)
+    Log.d("GSONARTISTS", albumResponse.artists.toString())
+    Log.d("GSONARTISTSNAME", albumResponse.artists[0].name)
     return albumResponse.artists
 }
 

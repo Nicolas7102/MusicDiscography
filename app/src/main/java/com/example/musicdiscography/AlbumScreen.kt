@@ -19,7 +19,7 @@ fun AlbumScreen(albumList: List<Album>, modifier: Modifier = Modifier) {
         modifier = Modifier.fillMaxSize().padding(16.dp)
     ) {
         Text(
-            text = "Lista de algo",
+            text = "Listado de algo",
             style = MaterialTheme.typography.titleLarge,
             modifier = modifier
         )
