@@ -8,7 +8,6 @@ import androidx.compose.ui.Modifier
 @Composable
 fun AlbumUIItem(
     album: Album,
-    modifier: Modifier = Modifier
 ) {
     Column {
         Text(
